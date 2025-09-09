@@ -1,0 +1,125 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - navigation [ref=e5]:
+      - generic [ref=e7]:
+        - link "Automation Automation Practice":
+          - /url: ""
+          - generic [ref=e8] [cursor=pointer]:
+            - heading "Automation" [level=3] [ref=e9] [cursor=pointer]
+            - paragraph [ref=e10] [cursor=pointer]: Automation Practice
+      - text: 
+      - link "London QA Meetup @Rahul Shetty - Limited Seats! Book Now!" [ref=e11] [cursor=pointer]:
+        - /url: https://qasummit.org/
+      - list [ref=e12]:
+        - listitem [ref=e13] [cursor=pointer]:
+          - button " HOME" [ref=e14] [cursor=pointer]:
+            - generic [ref=e15] [cursor=pointer]: 
+            - text: HOME
+        - listitem
+        - listitem [ref=e16] [cursor=pointer]:
+          - button " ORDERS" [ref=e17] [cursor=pointer]:
+            - generic [ref=e18] [cursor=pointer]: 
+            - text: ORDERS
+        - listitem [ref=e19] [cursor=pointer]:
+          - button " Cart 1" [ref=e20] [cursor=pointer]:
+            - generic [ref=e21] [cursor=pointer]: 
+            - text: Cart
+            - generic [ref=e22]: "1"
+        - listitem [ref=e23] [cursor=pointer]:
+          - button "Sign Out" [ref=e24] [cursor=pointer]:
+            - generic [ref=e25] [cursor=pointer]: 
+            - text: Sign Out
+    - generic [ref=e28]:
+      - generic [ref=e32]:
+        - generic [ref=e33]: ZARA COAT 3
+        - generic [ref=e34]: $ 11500
+        - generic [ref=e35]: "Quantity: 1"
+        - list [ref=e37]:
+          - listitem [ref=e38]: Apple phone
+      - generic [ref=e41]:
+        - generic [ref=e42]: Payment Method
+        - generic [ref=e43]:
+          - generic [ref=e44] [cursor=pointer]: Credit Card
+          - generic [ref=e45] [cursor=pointer]: Paypal
+          - generic [ref=e46] [cursor=pointer]: SEPA
+          - generic [ref=e47] [cursor=pointer]: Invoice
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - generic [ref=e50]: Personal Information
+            - generic [ref=e52]:
+              - generic [ref=e54]:
+                - generic [ref=e55]: Credit Card Number
+                - textbox [active] [ref=e56]: "123321312213"
+              - generic [ref=e57]:
+                - generic [ref=e58]:
+                  - generic [ref=e59]: Expiry Date
+                  - combobox [ref=e60]:
+                    - option "01" [selected]
+                    - option "02"
+                    - option "03"
+                    - option "04"
+                    - option "05"
+                    - option "06"
+                    - option "07"
+                    - option "08"
+                    - option "09"
+                    - option "10"
+                    - option "11"
+                    - option "12"
+                  - combobox [ref=e61]:
+                    - option "01"
+                    - option "02"
+                    - option "03"
+                    - option "04"
+                    - option "05"
+                    - option "06"
+                    - option "07"
+                    - option "08"
+                    - option "09"
+                    - option "10"
+                    - option "11"
+                    - option "12"
+                    - option "13"
+                    - option "14"
+                    - option "15"
+                    - option "16" [selected]
+                    - option "17"
+                    - option "18"
+                    - option "19"
+                    - option "20"
+                    - option "21"
+                    - option "22"
+                    - option "23"
+                    - option "24"
+                    - option "25"
+                    - option "26"
+                    - option "27"
+                    - option "28"
+                    - option "29"
+                    - option "30"
+                    - option "31"
+                - generic [ref=e62]:
+                  - generic [ref=e63]:
+                    - text: CVV Code
+                    - generic [ref=e64]: "?"
+                  - textbox [ref=e65]
+              - generic [ref=e67]:
+                - generic [ref=e68]: Name on Card
+                - textbox [ref=e69]
+              - generic [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e72]: Apply Coupon
+                  - textbox [ref=e73]
+                - button "Apply Coupon" [ref=e76] [cursor=pointer]
+          - generic [ref=e77]:
+            - generic [ref=e78]: Shipping Information
+            - generic [ref=e80]:
+              - generic [ref=e81]: singhs@gmail.xom
+              - textbox [ref=e82]: singhs@gmail.xom
+              - textbox "Select Country" [ref=e85]
+              - generic [ref=e87] [cursor=pointer]: Place Order
+  - alert "Product Added To Cart" [ref=e89]
+```
