@@ -1,3 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
 "","12939","Place order successfully","chromium","Tue Sep 09 10:14:47 UTC 2025","passed","Tue Sep 09 10:15:00 UTC 2025","E2E Order Flow with Assertions","module4\specs\module4.test.js","",""
-"","15850","Place order successfully","chromium","Wed Sep 10 05:26:53 UTC 2025","passed","Wed Sep 10 05:27:09 UTC 2025","Order Flow with Assertions","module4/specs/module4.test.js","",""
+"","15743","Place order successfully","chromium","Wed Sep 10 05:50:35 UTC 2025","passed","Wed Sep 10 05:50:50 UTC 2025","Order Flow with Assertions","module4/specs/module4.test.js","",""
