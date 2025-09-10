@@ -1,0 +1,63 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - navigation [ref=e5]:
+      - generic [ref=e7]:
+        - link "Automation Automation Practice":
+          - /url: ""
+          - generic [ref=e8] [cursor=pointer]:
+            - heading "Automation" [level=3] [ref=e9] [cursor=pointer]
+            - paragraph [ref=e10] [cursor=pointer]: Automation Practice
+      - text: 
+      - link "London QA Meetup @Rahul Shetty - Limited Seats! Book Now!" [ref=e11] [cursor=pointer]:
+        - /url: https://qasummit.org/
+      - list [ref=e12]:
+        - listitem [ref=e13] [cursor=pointer]:
+          - button " HOME" [ref=e14] [cursor=pointer]:
+            - generic [ref=e15] [cursor=pointer]: 
+            - text: HOME
+        - listitem
+        - listitem [ref=e16] [cursor=pointer]:
+          - button " ORDERS" [ref=e17] [cursor=pointer]:
+            - generic [ref=e18] [cursor=pointer]: 
+            - text: ORDERS
+        - listitem [ref=e19] [cursor=pointer]:
+          - button " Cart 1" [ref=e20] [cursor=pointer]:
+            - generic [ref=e21] [cursor=pointer]: 
+            - text: Cart
+            - generic [ref=e22]: "1"
+        - listitem [ref=e23] [cursor=pointer]:
+          - button "Sign Out" [ref=e24] [cursor=pointer]:
+            - generic [ref=e25] [cursor=pointer]: 
+            - text: Sign Out
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "My Cart" [level=1] [ref=e28]
+        - button "Continue Shopping❯" [ref=e29] [cursor=pointer]
+      - list [ref=e31]:
+        - listitem [ref=e32] [cursor=pointer]:
+          - generic [ref=e33] [cursor=pointer]:
+            - generic [ref=e34] [cursor=pointer]:
+              - paragraph [ref=e35] [cursor=pointer]: "#68a961459320a140fe1ca57a"
+              - heading "ZARA COAT 3" [level=3] [ref=e36] [cursor=pointer]
+              - paragraph [ref=e37] [cursor=pointer]: MRP $ 11500
+              - paragraph [ref=e38] [cursor=pointer]: In Stock
+            - paragraph [ref=e40] [cursor=pointer]: $ 11500
+            - generic [ref=e41] [cursor=pointer]:
+              - button "Buy Now❯" [ref=e42] [cursor=pointer]
+              - button "❯" [ref=e43] [cursor=pointer]:
+                - generic [ref=e44] [cursor=pointer]: 
+                - text: ❯
+      - list [ref=e46]:
+        - listitem [ref=e47]:
+          - generic [ref=e48]: Subtotal
+          - generic [ref=e49]: $11500
+        - listitem [ref=e50]:
+          - generic [ref=e51]: Total
+          - generic [ref=e52]: $11500
+        - listitem [ref=e53]:
+          - button "Checkout❯" [ref=e54] [cursor=pointer]
+  - alert "Product Added To Cart" [ref=e56]
+```
