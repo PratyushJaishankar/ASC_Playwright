@@ -20,6 +20,10 @@ jobs:
         run: npm ci
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
+      - name: Install Allure CLI
+        run: npm install allure-playwright --save-dev
+      - name: Install allure commandline
+        run: npm install -g allure-commandline
       - name: Run Playwright tests
         run: npx playwright test module4/specs/module4.test.js --reporter=html --project=chromium
       - name: Upload HTML report
