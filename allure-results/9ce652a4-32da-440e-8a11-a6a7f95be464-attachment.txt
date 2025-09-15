@@ -1,1 +1,0 @@
-Verified: "Create Account" heading is not present on the Registration page.

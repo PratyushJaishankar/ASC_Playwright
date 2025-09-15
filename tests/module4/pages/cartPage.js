@@ -1,19 +1,21 @@
-// pages/cartPage.js
 const { expect } = require('@playwright/test');
 
 class CartPage {
     constructor(page) {
         this.page = page;
         this.checkoutButton = page.getByText('Checkout', { exact: true });
-
     }
 
+    // Proceed from cart page to checkout
     async proceedToCheckout() {
-        await expect(this.checkoutButton).toBeVisible(); // ✅ assertion
+        console.log('Verifying Checkout button is visible');
+        await expect(this.checkoutButton).toBeVisible(); // assertion
+
+        console.log('Clicking Checkout button');
         await this.checkoutButton.click();
 
-        // ✅ assertion: verify on checkout page
-        await expect(this.page).toHaveURL(/order/);
+        console.log('Verifying navigation to Checkout page');
+        await expect(this.page).toHaveURL(/order/); // assertion
     }
 }
 

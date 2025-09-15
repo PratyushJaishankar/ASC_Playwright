@@ -1,3 +1,0 @@
-Step 1: Login
-Step 2: Scroll & Hover product
-Step 3: Handle Add to Cart popup

@@ -1,6 +1,6 @@
 // specs/lab3_1.spec.js
-require('dotenv').config(); // <-- load .env first
-
+import dotenv from 'dotenv';
+dotenv.config({ quiet: true });
 const { test, expect } = require('@playwright/test');
 const { LoginPage } = require('../pages/loginPage');
 const DashboardPage = require('../pages/dashboardPage');
