@@ -48,7 +48,9 @@ class DashboardPage {
         console.log('Background color before hover:', beforeHoverColor);
 
         // Hover over the Add To Cart button
+        await this.page.waitForTimeout(2000);
         await addToCartButton.hover();
+        await this.page.waitForTimeout(2000);
         console.log('Hovered over Add To Cart button');
 
         // Capture background color after hover
