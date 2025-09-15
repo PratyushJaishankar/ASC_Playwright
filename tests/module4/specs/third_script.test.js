@@ -8,7 +8,6 @@ const DashboardPage = require('../pages/dashboardPage');
 
 test('Lab 3.1: Explicit Waits and Assertions (POM) - use .env creds', async ({ page }) => {
   const loginPage = new LoginPage(page);
-  const dashboardPage = new DashboardPage(page);
 
   // Step 1: Open login page & login with credentials from .env
   await loginPage.open();
@@ -27,7 +26,4 @@ test('Lab 3.1: Explicit Waits and Assertions (POM) - use .env creds', async ({ p
   await expect(products).toHaveCount(3);
 
   // Optionally reuse existing DashboardPage methods
-  await dashboardPage.scrollToBottom();
-  await dashboardPage.hoverOverFirstProduct();
-  await dashboardPage.handleAddToCartPopup();
 });
