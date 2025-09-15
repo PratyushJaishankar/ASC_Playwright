@@ -1,3 +1,0 @@
-The actual URL :  https://rahulshettyacademy.com/client/#/auth/register
-URL contains /auth/register
-Verified: "Create Account" heading is not present on the Registration page.
