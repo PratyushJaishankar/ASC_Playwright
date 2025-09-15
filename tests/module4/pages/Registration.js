@@ -20,6 +20,7 @@ class RegisterPage {
         this.confirmPasswordInput = page.locator('input[formcontrolname="confirmPassword"]'); // locator
         this.termsCheckbox = page.getByRole('checkbox'); // getByRole
         this.createAccountHeader = page.getByText('Account Created Successfully'); // getByText
+        this.createAccount = page.getByText('Create Account');
     }
 
     // Navigate to Register page

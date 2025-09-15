@@ -11,6 +11,6 @@ test('Navigate and interact with registration page (POM)', async ({ page }) => {
     await registerPage.verifyOnRegisterPage();
 
     // Verify "Create Account" heading is NOT present
-    await expect.soft(registerPage.createAccountHeader).toHaveCount(0);
+    await expect.soft(registerPage.createAccount).toHaveCount(0);
     console.log('Verified: "Create Account" heading is not present on the Registration page.');
 });

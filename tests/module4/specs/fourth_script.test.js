@@ -18,6 +18,8 @@ test.describe('Order Flow with Assertions', () => {
         await loginPage.open();
         await loginPage.login(process.env.LOGIN_EMAIL, process.env.LOGIN_PASSWORD);
 
+        await loginPage.verifyDashboardNavigation();
+
         console.log('Step 2: Scroll & Hover product');
         await dashboardPage.scrollToBottom();
         await dashboardPage.hoverOverFirstProduct();

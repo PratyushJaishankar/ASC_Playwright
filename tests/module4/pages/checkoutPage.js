@@ -56,7 +56,7 @@ class CheckoutPage {
         await this.page.getByText('Place Order').click();
 
         console.log('Verifying order confirmation screen');
-        await expect(this.page.getByText('$')).toBeVisible();
+        await expect(this.page).toHaveURL(/thanks/);
     }
 }
 

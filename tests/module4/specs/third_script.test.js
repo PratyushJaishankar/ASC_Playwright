@@ -3,7 +3,6 @@ import dotenv from 'dotenv';
 dotenv.config({ quiet: true });
 const { test, expect } = require('@playwright/test');
 const { LoginPage } = require('../pages/loginPage');
-const DashboardPage = require('../pages/dashboardPage');
 
 
 test('Lab 3.1: Explicit Waits and Assertions (POM) - use .env creds', async ({ page }) => {
@@ -25,5 +24,4 @@ test('Lab 3.1: Explicit Waits and Assertions (POM) - use .env creds', async ({ p
   const products = page.locator('.card-body');
   await expect(products).toHaveCount(3);
 
-  // Optionally reuse existing DashboardPage methods
 });
