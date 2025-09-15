@@ -1,0 +1,5 @@
+Navigating to client homepage
+Clicking Register link
+Verifying URL contains /auth/register
+Verifying Register button is visible
+Verified: "Create Account" heading is not present on the Registration page.
