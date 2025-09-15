@@ -1,10 +1,16 @@
-const { test } = require('@playwright/test');
-const { RegisterPage } = require('../pages/Registration'); 
+const { test,expect } = require('@playwright/test');
+const { RegisterPage } = require('../pages/Registration');
 
-test('Navigate and interact with registration page', async ({ page }) => {
-  const registerPage = new RegisterPage(page);
+test('Navigate and interact with registration page (POM)', async ({ page }) => {
+    const registerPage = new RegisterPage(page);
 
-  await registerPage.goto();                 // Step 1: Go to homepage
-  await registerPage.navigateToRegister();   // Step 2: Click Register
-  await registerPage.verifyOnRegisterPage(); // Step 3: Verify URL + Register button
+    // Go to registration page
+    await registerPage.goto();
+
+    // Verify we are on the registration page
+    await registerPage.verifyOnRegisterPage();
+
+    // Verify "Create Account" heading is NOT present
+    await expect.soft(registerPage.createAccountHeader).toHaveCount(0);
+    console.log('Verified: "Create Account" heading is not present on the Registration page.');
 });

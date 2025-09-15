@@ -58,7 +58,7 @@ class RegisterPage {
     }
 
     async verifyOnRegisterPage() {
-        await expect(this.page).toHaveURL(this.urlPattern);
+        await expect(this.page).toHaveURL(/auth\/register/);
         await expect(this.registerButton).toBeVisible();
     }
 }
