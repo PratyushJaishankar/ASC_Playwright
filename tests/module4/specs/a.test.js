@@ -6,7 +6,7 @@ test('Navigate and interact with registration page', async({page}) => {
     console.log('The actual URL : ' ,actual_url);
     await expect(page).toHaveURL(/.*\/auth\/register/);
     console.log('URL contains /auth/register');
-    await expect.soft(page.getByText('Create Account')).toBeVisible();
+    await expect.soft(page.getByText('Create Account')).toHaveCount(0);
     console.log('Verified: "Create Account" heading is not present on the Registration page.');
 
 });
