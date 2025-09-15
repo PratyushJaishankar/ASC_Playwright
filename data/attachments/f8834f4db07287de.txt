@@ -1,9 +1,9 @@
 Navigating to client homepage
 Clicking Register link
-Generated random email: user1757926266077@example.com
+Generated random email: user1757931562995@example.com
 Filling first name: Babu
 Filling last name: Rao
-Filling email: user1757926266077@example.com
+Filling email: user1757931562995@example.com
 Filling phone: 9876543210
 Selecting occupation
 Selecting gender
