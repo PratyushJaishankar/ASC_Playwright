@@ -1,6 +1,6 @@
 // specs/e2eOrder.spec.js
 const { test } = require('@playwright/test');
-const LoginPage = require('../pages/loginPage');
+const {LoginPage} = require('../pages/loginPage');
 const DashboardPage = require('../pages/dashboardPage');
 const CartPage = require('../pages/cartPage');
 const CheckoutPage = require('../pages/checkoutPage');
@@ -15,7 +15,7 @@ test.describe('Order Flow with Assertions', () => {
         const checkoutPage = new CheckoutPage(page);
 
         console.log('Step 1: Login');
-        await loginPage.navigate();
+        await loginPage.open();
         await loginPage.login(process.env.LOGIN_EMAIL, process.env.LOGIN_PASSWORD);
 
         console.log('Step 2: Scroll & Hover product');

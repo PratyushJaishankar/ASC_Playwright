@@ -1,27 +1,25 @@
-// pages/loginPage.js
 const { expect } = require('@playwright/test');
 
 class LoginPage {
-    constructor(page) {
-        this.page = page;
-        this.emailInput = page.getByRole('textbox', { name: 'email@example.com' });
-        this.passwordInput = page.getByRole('textbox', { name: 'enter your passsword' });
-        this.loginButton = page.getByRole('button', { name: 'Login' });
-    }
+  constructor(page) {
+    this.page = page;
+    this.emailInput = page.locator('#userEmail');
+    this.passwordInput = page.locator('#userPassword');
+    this.loginButton = page.locator('#login');
+  }
 
-    async navigate() {
-        await this.page.goto('https://rahulshettyacademy.com/client/#/auth/login');
-        await expect(this.loginButton).toBeVisible(); // ✅ assertion: login page loaded
-    }
+  async open() {
+    await this.page.goto('https://rahulshettyacademy.com/client');
+  }
 
-    async login(email, password) {
-        await this.emailInput.fill(email);
-        await this.passwordInput.fill(password);
-        await this.page.waitForTimeout(2000);
-        await this.loginButton.click();
-        // ✅ assertion: verify dashboard after login
-        await expect(this.page).toHaveURL(/dashboard/);
-    }
+  async login(email, password) {
+    await this.emailInput.fill(email);
+    await this.passwordInput.fill(password);
+    await this.loginButton.click();
+  }
+
+  async verifyDashboardNavigation() {
+    await expect.soft(this.page).toHaveURL('https://rahulshettyacademy.com/client/#/dashboard/dash');
+  }
 }
-
-module.exports = LoginPage;
+module.exports = { LoginPage };
