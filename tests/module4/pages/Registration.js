@@ -7,6 +7,9 @@ class RegisterPage {
      */
     constructor(page) {
         this.page = page;
+        this.registerLink = page.getByRole('link', { name: 'Register' });
+        this.registerButton = page.getByRole('button', { name: 'Register' });
+        this.urlPattern = /.*\/auth\/register/;
         this.firstNameInput = page.getByPlaceholder('First Name'); // getByPlaceholder
         this.lastNameInput = page.getByPlaceholder('Last Name'); // getByPlaceholder
         this.emailInput = page.getByRole('textbox', { name: 'email@example.com' }); // getByRole
@@ -49,6 +52,14 @@ class RegisterPage {
 
     async verifyCreateAccountHeader() {
         await expect(this.createAccountHeader).toBeVisible();
+    }
+    async navigateToRegister() {
+        await this.registerLink.click();
+    }
+
+    async verifyOnRegisterPage() {
+        await expect(this.page).toHaveURL(this.urlPattern);
+        await expect(this.registerButton).toBeVisible();
     }
 }
 
