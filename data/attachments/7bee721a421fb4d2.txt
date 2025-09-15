@@ -1,0 +1,17 @@
+Zooming in the page
+Page zoom applied
+Step 1: Login
+Navigating to login page
+Login page opened
+Filling email: singhs@gmail.xom
+Filling password
+Clicking login button
+Login submitted
+Step 2: Scroll & Hover product
+Scrolling to bottom of the page
+Scroll done, verifying first product visibility
+First product is visible
+Hovering over the first product
+Background color before hover: rgb(255, 255, 255)
+Hovered over Add To Cart button
+Background color after hover: rgb(255, 255, 255)

@@ -1,0 +1,9 @@
+Navigating to login page
+Login page opened
+Filling email: singhs@gmail.xom
+Filling password
+Clicking login button
+Login submitted
+Verifying navigation to dashboard page
+Dashboard navigation verified
+Products section is visible
