@@ -1,5 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","3529","Register new user","chromium","Mon Sep 15 05:20:39 UTC 2025","passed","Mon Sep 15 05:20:42 UTC 2025","","module4\specs\module2.test.js","",""
-"","11780","Place order successfully","chromium","Mon Sep 15 05:29:23 UTC 2025","passed","Mon Sep 15 05:29:35 UTC 2025","Order Flow with Assertions","module4/specs/module4.test.js","",""
-"","9001","Lab 3.1: Explicit Waits and Assertions (POM) - use .env creds","chromium","Mon Sep 15 05:20:39 UTC 2025","passed","Mon Sep 15 05:20:48 UTC 2025","","module4\specs\module3.test.js","",""
-"","2365","Navigate and interact with registration page","chromium","Mon Sep 15 05:20:39 UTC 2025","passed","Mon Sep 15 05:20:41 UTC 2025","","module4\specs\module1.test.js","",""
+"","7143","Place order successfully","chromium","Tue Sep 09 14:47:01 IST 2025","passed","Tue Sep 09 14:47:08 IST 2025","E2E Order Flow with Assertions","module4\specs\module4.test.js","",""
